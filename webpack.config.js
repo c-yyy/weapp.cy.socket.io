@@ -1,10 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (env = {}) => {
   const target = env.target || 'Wechat';
-	const isWechat = target !== 'Alipay';
-	const isAlipay = !isWechat;
+  const isWechat = target !== 'Alipay';
+  const isAlipay = !isWechat;
 
   return {
     mode: 'none',
@@ -17,7 +18,7 @@ module.exports = (env = {}) => {
     plugins: [
       new webpack.DefinePlugin({
         wx: isWechat ? 'wx' : 'my',
-				my: isAlipay ? 'my' : 'wx',
+        my: isAlipay ? 'my' : 'wx',
       }),
       new webpack.NormalModuleReplacementPlugin(/debug/, process.cwd() + '/support/noop.js'),
       new webpack.NormalModuleReplacementPlugin(/^ws$/g, process.cwd() + '/src/wx-ws.js'),
@@ -49,6 +50,10 @@ module.exports = (env = {}) => {
           }]
         }
       }]
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [new TerserPlugin()],
     }
   }
 };
