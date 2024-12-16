@@ -48,7 +48,7 @@ Full feature socket.io style implemented, based-on `socket.io@3.x` version, such
 If you use a third-party framework such as [wepy](https://github.com/Tencent/wepy), you should install via `npm`
 
 ```
-$ npm install weapp.socket.io
+$ npm install weapp.cy.socket.io
 ```
 
 Or if you use the native way to write code，I recommend using `git clone`

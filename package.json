@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:weapp-socketio/weapp.socket.io.git"
+    "url": "git@github.com:c-yyy/weapp.cy.socket.io.git"
   },
   "license": "MIT"
 }
