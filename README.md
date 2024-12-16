@@ -54,7 +54,7 @@ $ npm install weapp.socket.io
 Or if you use the native way to write code，I recommend using `git clone`
 
 ```
-$ git clone https://github.com/weapp-socketio/weapp.socket.io
+$ git clone https://github.com/c-yyy/weapp.cy.socket.io.git
 
 # development mode
 $ npm run build-dev
@@ -62,7 +62,7 @@ $ npm run build-dev
 # production mode
 $ npm run build
 
-$ cp path/weapp.socket.io/dist/weapp.socket.io.js path/your_weapp_dir
+$ cp path/weapp.socket.io/dist/weapp.cy.socket.io.js path/your_weapp_dir
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ $ cp path/weapp.socket.io/dist/weapp.socket.io.js path/your_weapp_dir
 code style is same to [socket.io-client](https://github.com/socketio/socket.io-client)
 
 ```
-const io = require('./yout_path/weapp.socket.io.js')
+const io = require('./yout_path/weapp.cy.socket.io.js')
 
 const socket = io('https://socket-io-chat.now.sh')
 
@@ -93,13 +93,3 @@ socket.emit('add user', "Jack");
 
 See [socket.io-client API](https://github.com/socketio/socket.io-client/blob/master/docs/API.md)
 
-## Contributors
-
-### Code Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](.github/CONTRIBUTING.md)].
-<a href="https://github.com/weapp-socketio/weapp.socket.io/graphs/contributors"><img src="https://opencollective.com/weappsocketio/contributors.svg?width=890&button=false" /></a>
-
-### Financial Contributors
-
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/weappsocketio/contribute)]
