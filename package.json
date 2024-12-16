@@ -9,7 +9,7 @@
     "events",
     "client"
   ],
-  "main": "./lib/weapp.socket.io.js",
+  "main": "./lib/weapp.socket.io.wx.js",
   "files": [
     "lib/"
   ],
